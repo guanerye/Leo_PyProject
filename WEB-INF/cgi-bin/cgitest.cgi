@@ -7,4 +7,5 @@ print 'Content-type: text/plain'
 print #Print Fuck
 
 print 'Hello, CGI'
+print 'fuck the world'
 
