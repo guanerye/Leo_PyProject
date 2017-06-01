@@ -1,1 +1,2 @@
-never give up
+never give up,
+yeah you can do it,just do it
