@@ -15,14 +15,17 @@ if form.getvalue('dropdown'):
 else:
     dropdown_value = 'nothing'
 
-print "Content-type:text/html"
-print
-print "<html>"
-print "<head>"
-print "<meta charset=\"utf-8\">"
-print "<title>菜鸟教程 CGI 测试实例</title>"
-print "</head>"
-print "<body>"
-print "<h2> 选中的选项是：%s</h2>" % dropdown_value
-print "</body>"
-print "</html>"
+print """
+Content-type:text/html"
+
+<html>
+<head>
+<meta charset=\"utf-8\">
+<title>菜鸟教程 CGI 测试实例</title>
+</head>
+<body>
+<h2> 选中的选项是：%s</h2>""" % dropdown_value
+"""
+</body>
+</html>
+"""
