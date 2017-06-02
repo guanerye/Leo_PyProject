@@ -6,12 +6,12 @@ import cgitb; cgitb.enable()
 
 form = cgi.FieldStorage()
 
-filename = form['filename']
+fileitem = form['filename']
 
-if filename.filename:
-    fn = os.path.basename(filename.filename)
-    open('/tmp/' + fn, 'wb').write(filename.filename)
-    message = 'file "' + fn + '"upload OK'
+if fileitem.filename:
+    fn = os.path.basename(fileitem.filename)
+    open('/tmp/' + fn, 'wb').write(fileitem.file.read())
+    message = 'file "' + fn + '"is uploaded ok'
 else:
     message = 'file upload failed'
 
