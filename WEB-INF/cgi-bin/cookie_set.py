@@ -3,7 +3,7 @@
 #
 
 print 'Content-Type: text/html'
-print 'Set-Cookie: name="leo Project Cookie";expires=Fri, 2 Jun 2017 20:30:00 GMT'
+print 'Set-Cookie: name="leo Project Cookie";expires=Fri, 2 Jun 2016 20:30:00 GMT'
 print
 print """
 <html>
