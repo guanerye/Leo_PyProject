@@ -17,7 +17,7 @@ else:
 
 
 print "Content-type:text/html"
-
+print
 print "<html>"
 print "<head>"
 print "    <meta charset=\"UTF-8\">"
