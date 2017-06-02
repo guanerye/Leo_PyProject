@@ -7,7 +7,11 @@ import cgi, cgitb
 form = cgi.FieldStorage()
 
 if form.getvalue('dropdown'):
-    dropdown_value = form.getvalue('dropdown')
+    if form.getvalue('dropdown')=="leo":
+        dropdown_value = 'leo1111'
+    else:
+        dropdown_value = 'Google111'
+
 else:
     dropdown_value = 'nothing'
 
