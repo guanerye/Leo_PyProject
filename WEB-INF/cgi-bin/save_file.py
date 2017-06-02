@@ -10,7 +10,7 @@ filename = form['filename']
 
 if filename.filename:
     fn = os.path.basename(filename.filename)
-    open('tmp' + fn, 'wb').write(filename.filename)
+    open('/tmp/' + fn, 'wb').write(filename.filename)
     message = 'file "' + fn + '"upload OK'
 else:
     message = 'file upload failed'
