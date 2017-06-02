@@ -24,7 +24,9 @@ if 'HTTP_COOKIE' in os.environ:
 
     try:
         data = c['name'].value
+        dataexprires = c.['expires'].value
         print "cookie data: " + data + "<br>"
+        print "cookie data: " + dataexprires + "<br>"
     except KeyError:
         print "Cookie is not setted<br>"
 
