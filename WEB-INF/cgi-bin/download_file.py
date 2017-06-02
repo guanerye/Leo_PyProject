@@ -4,7 +4,7 @@
 print "Content-Disposition: attachment; filename=\"foo.txt\""
 print
 
-fo = open("foo.txt","rb")
+fo = open("/usr/local/apache-tomcat8/webapps/Leo_PyProject/WEB-INF/cgi-bin/foo2.txt","rb")
 
 str = fo.read()
 print str
