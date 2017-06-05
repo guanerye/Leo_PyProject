@@ -10,4 +10,4 @@ port = 10081
 
 s.connect((host,port))
 print s.recv(1024)
-s.close()
+#s.close()

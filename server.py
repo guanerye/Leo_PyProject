@@ -14,5 +14,5 @@ while True:
     c, addr = s.accept()
     print 'connected address: ' , addr
     c.send('Wellcome Leo Home')
-    c.close()
+    #c.close()
 
