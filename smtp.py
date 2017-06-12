@@ -8,7 +8,9 @@ from email.header import Header
 sender = 'leo@shabi.com'
 receivers = ['lisongnan7@hotmail.com']
 
-message = MIMEText('Python test email contents','plain', 'utf-8')
+charset = 'ISO-2022-JP'
+
+message = MIMEText('Python test email contents','plain', charset)
 message['From'] =Header("leo email",'utf-8')
 message['To'] = Header("Hello",'utf-8')
 
@@ -21,4 +23,3 @@ try:
     print "email send succeed"
 except smtplib.SMTPException:
     print "Error: can not send the email"
-
