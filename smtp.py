@@ -8,14 +8,14 @@ from email.header import Header
 sender = 'leo@shabi.com'
 receivers = ['lisongnan7@hotmail.com']
 
-charset = 'ISO-2022-JP'
+charset = 'UTF-8'
 
 message = MIMEText('Python test email contents','plain', charset)
-message['From'] =Header("leo email",'utf-8')
-message['To'] = Header("Hello",'utf-8')
+message['From'] =Header("leo email",charset)
+message['To'] = Header("Hello",charset)
 
 subject = "Python email test"
-message['Subject'] = Header(subject,'utf-8')
+message['Subject'] = Header(subject,charset)
 
 try:
     smtpObj = smtplib.SMTP('localhost')
